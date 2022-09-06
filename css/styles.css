@@ -35,6 +35,10 @@ span {
   padding: 0px;
 }
 
+img {
+  display: block;
+}
+
 /*----------------------------------------------------------*/
 
 .logo {
@@ -89,8 +93,9 @@ span {
 }
 
 .nav-contacts .font-style {
+  display: flex;
+  align-items: center;
   font-weight: 500;
-  display: block;
   padding: 20px 0px;
   margin-top: 0px;
 }
@@ -232,8 +237,12 @@ header .container {
 }
 
 .item-container {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -255,10 +264,8 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 16px;
   margin-top: 16px;
+  background-color: white;
 }
 
 .card-container {
@@ -266,6 +273,7 @@ header .container {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: green;
 }
 
 .social-networks a {
@@ -309,7 +317,9 @@ header .container {
 
 .logo.logo-color {
   color: white;
-  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .adress .font-style {
@@ -390,16 +400,8 @@ header .container {
   display: inline-block;
 }
 
-.item-container {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  background-color: #ffffff;
-}
-
 .items .item-container {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 20px 24px;
 }
 
 .items:hover,
@@ -433,16 +435,11 @@ header .container {
   margin-left: 30px;
 }
 
-.works .font-style,
-.works .headlines-style {
-  padding: 0px 24px;
-}
-
 .section.work {
   padding-left: 0px;
   padding-right: 0px;
 }
-.clients-list {
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -450,7 +447,6 @@ header .container {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  background-color: #f5f5f5;
 }
 
 .clients-list .icon {
@@ -459,13 +455,13 @@ header .container {
   fill: #afb1b8;
 }
 
-.clients-list:hover,
-.clients-list:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--acent);
 }
 
-.clients-list:hover .icon,
-.clients-list:focus .icon {
+.clients-link:hover .icon,
+.clients-link:focus .icon {
   fill: var(--acent);
 }
 
@@ -492,13 +488,14 @@ header .container {
 }
 
 .footer .adds {
-  margin-top: 30px;
+  margin-top: 12px;
   margin-left: 70px;
 }
 
 .footer .social-networks {
   margin: 0px;
   margin-top: 16px;
+  background-color: #2f303a;
 }
 
 .footer .social-networks a {
@@ -509,6 +506,7 @@ header .container {
 .social-networks a:focus {
   background-color: var(--acent);
 }
+
 /*----------------------------------------container*/
 .header {
   border-bottom: 1px solid #ececec;
@@ -530,7 +528,7 @@ header .container {
   padding-bottom: 0px;
 }
 
-.section.bg-color {
+.bg-color {
   background-color: var(--icon-bgc);
 }
 
@@ -546,10 +544,4 @@ header .container {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.list-item {
-  width: 20px;
-  height: 20px;
-  background-color: red;
 }
