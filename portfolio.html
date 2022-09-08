@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container nav-header">
         <a href="index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
         <nav>
           <ul class="nav-menu">
@@ -41,7 +41,7 @@
           </li>
           <li>
             <a class="font-style" href="tel:+380961111111">
-              <svg class="icon-header" width="10" height="30">
+              <svg class="icon-header" width="10" height="16">
                 <use href="./images/icons/symbol-defs.svg#icon-mobile"></use>
               </svg>
 
@@ -317,4 +317,10 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const { height: pageHeaderHeight } = document.querySelector('.header').getBoundingClientRect();
+
+    document.body.style.paddingTop = `${pageHeaderHeight}px`;
+  </script>
 </html>
