@@ -109,12 +109,8 @@ img {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-
   border-bottom: 1px solid #ececec;
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .nav-header {
@@ -178,7 +174,8 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/Img.jpg');
 
-  margin-top: 80px;
+  /*margin-top: 80px;*/
+  
 }
 .effective-solutions .header-style {
   text-transform: uppercase;
