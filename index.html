@@ -57,13 +57,26 @@
       <section>
         <div class="effective-solutions">
           <h1 class="header-style">Ефективні рішення для <br />вашого бізнесу</h1>
-          <button class="btn-style" autofocus type="button">Замовити послугу</button>
+          <button data-modal-open class="btn-style" autofocus type="button">
+            Замовити послугу
+          </button>
+          <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+              <div class="btn-modal">
+                <button data-modal-close class="btn-close">
+                  <svg width="11" height="11">
+                    <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!--блок преимуществ-->
       <section>
-        <div class="container section">
+        <div class="container section drop">
           <h2 class="visually-hidden">Переваги</h2>
           <ul class="benefits">
             <li>
@@ -121,17 +134,15 @@
           <li class="works-container">
             <div class="thumb">
               <div class="overlay">
-                <img src="./images/a/img.jpg" alt="picture pc" height="294" width="370" />
+                <img src="./images/work-1.jpg" alt="picture pc" height="294" width="370" />
+                <p class="font-style position">Десктопні додатки</p>
               </div>
-              <p class="font-style position">Десктопні додатки</p>
             </div>
           </li>
           <li class="works-container">
             <div class="thumb">
               <div class="overlay">
-                <img src="./images/a/img-1.jpg" alt="picture mobile" height="294" width="370" />
-              </div>
-              <div class="bg-item">
+                <img src="./images/work-2.jpg" alt="picture mobile" height="294" width="370" />
                 <p class="font-style position">Мобільні додатки</p>
               </div>
             </div>
@@ -139,9 +150,7 @@
           <li class="works-container">
             <div class="thumb">
               <div class="overlay">
-                <img src="./images/a/img-2.jpg" alt="picture tablet" height="294" width="370" />
-              </div>
-              <div class="bg-item">
+                <img src="./images/work-3.jpg" alt="picture tablet" height="294" width="370" />
                 <p class="font-style position">Дизайнерські рішення</p>
               </div>
             </div>
@@ -155,7 +164,7 @@
           <h2 class="header-style padding-top">Наша команда</h2>
           <ul class="command">
             <li class="card-container">
-              <img src="./images/b/img.jpg" alt="Igor photo" width="270" />
+              <img src="./images/command1.jpg" alt="Igor photo" width="270" />
               <div class="item-container">
                 <h3 class="headlines-style">Ігор Дем'яненко</h3>
                 <p class="font-style">Product Designer</p>
@@ -192,7 +201,7 @@
               </div>
             </li>
             <li class="card-container">
-              <img src="./images/b/img-1.jpg" alt="Olga photo" width="270" />
+              <img src="./images/command2.jpg" alt="Olga photo" width="270" />
               <div class="item-container">
                 <h3 class="headlines-style">Ольга Рєпіна</h3>
                 <p class="font-style">Frontend Developer</p>
@@ -229,7 +238,7 @@
               </div>
             </li>
             <li class="card-container">
-              <img src="./images/b/img-2.jpg" alt="Mikola photo" width="270" />
+              <img src="./images/command3.jpg" alt="Mikola photo" width="270" />
               <div class="item-container">
                 <h3 class="headlines-style">Микола Тарасов</h3>
                 <p class="font-style">Marketing</p>
@@ -266,7 +275,7 @@
               </div>
             </li>
             <li class="card-container">
-              <img src="./images/b/img-3.jpg" alt="Igor photo" width="270" />
+              <img src="./images/command4.jpg" alt="Igor photo" width="270" />
               <div class="item-container">
                 <h3 class="headlines-style">Михайло Єрмаков</h3>
                 <p class="font-style">UI Designer</p>
@@ -422,4 +431,6 @@
       </div>
     </footer>
   </body>
+
+  <script src="./js/modal.js"></script>
 </html>
