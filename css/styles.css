@@ -177,6 +177,7 @@ img {
 
   /*margin-top: 80px;*/
 }
+
 .effective-solutions .header-style {
   text-transform: uppercase;
   color: white;
@@ -384,10 +385,49 @@ img {
   height: 581px;
   padding: 8px;
 
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  opacity: 1;
+  transition-duration: 2500ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  opacity: 0;
+}
+
+/*.effective-solutions .btn-style:hover .modal {
+  animation-name: animation;
+  animation-duration: 2500ms;
+  width: 20px;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    background-color: red;
+    rotate: 45 deg;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: blue;
+  }
+  100% {
+    opacity: 1;
+    background-color: white;
+  }
+}*/
+
+.modal .btn-modal {
+  text-align: right;
 }
 
 .btn-close {
@@ -396,17 +436,7 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: inherit;
-}
-
-.btn-modal {
-  padding-top: 8px;
-  padding-right: 8px;
-  text-align: right;
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .btns .btn-style {
@@ -449,23 +479,6 @@ img {
   display: inline-block;
   width: 370px;
 }
-
-/*.items .overlay::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translateY(100%);
-
-  background-color: var(--acent);
-  
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}*/
 
 .overlay {
   position: relative;
