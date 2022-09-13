@@ -94,6 +94,9 @@ img {
   display: block;
   padding: 32px 0px;
   margin-top: 0px;
+
+  transition: color;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -104,13 +107,16 @@ img {
   font-weight: 500;
   padding: 32px 0px;
   margin-top: 0px;
+
+  transition: color;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
   border-bottom: 1px solid #ececec;
-  /*background-color: white;*/
+  background-color: white;
 }
 
 .nav-header {
@@ -286,6 +292,9 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: background-color;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -294,6 +303,16 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+
+  transition: fill;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-networks a:hover,
+.social-networks a:focus {
+  background-color: var(--acent);
 }
 
 .social-networks a:hover .icon,
@@ -332,6 +351,9 @@ img {
   color: white;
   line-height: calc(24 / 12);
   margin-top: 9px;
+
+  transition: color;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -448,6 +470,10 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   box-shadow: none;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0),
+    0px 0px 0px rgba(0, 0, 0, 0);
+
+  transition: background-color, color, box-shadow;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -459,8 +485,6 @@ img {
   color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .items .headlines-style {
@@ -478,6 +502,11 @@ img {
 .items {
   display: inline-block;
   width: 370px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0), 0px 4px 4px rgba(0, 0, 0, 0),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay {
@@ -503,16 +532,19 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-
   transform: translateY(100%);
-  background-color: rgba(33, 149, 243, 0.8);
+  background-color: rgba(33, 149, 243, 0.3);
+
+  transition: transform, background-color;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.items .overlay:hover .overlay-text,
-.items .overlay:focus .overlay-text {
+.items:hover .overlay-text,
+.items:focus .overlay-text {
   transform: translateY(0);
+  background-color: rgba(33, 149, 243, 0.8);
 }
 
 .items .item-container {
@@ -602,6 +634,11 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: border;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list .icon {
@@ -609,13 +646,15 @@ img {
   height: 60px;
   fill: #afb1b8;
 
+  transition: fill;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  border-color: var(--acent);
+  border: 1px solid var(--acent);
 }
 
 .clients-link:hover .icon,
@@ -657,20 +696,23 @@ img {
 }
 
 .footer .social-networks a {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-networks a:hover,
-.social-networks a:focus {
+.footer .social-networks a:hover,
+.footer .social-networks a:focus {
   background-color: var(--acent);
 }
 
 .footer .icon {
   fill: white;
 }
+
 /*----------------------------------------container*/
 .header {
   border-bottom: 1px solid #ececec;
