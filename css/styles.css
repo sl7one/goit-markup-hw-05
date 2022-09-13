@@ -396,24 +396,11 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-}
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 8px;
+  transition: opacity, visibility;
 
-  background: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-
-  opacity: 1;
-  transition-duration: 2500ms;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -422,37 +409,36 @@ img {
   visibility: hidden;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .backdrop.is-hidden .modal {
-  opacity: 0;
+  transform: translate(-50%, -50%);
 }
-
-/*.effective-solutions .btn-style:hover .modal {
-  animation-name: animation;
-  animation-duration: 2500ms;
-  width: 20px;
-}
-
-@keyframes animation {
-  0% {
-    opacity: 0;
-    background-color: red;
-    rotate: 45 deg;
-  }
-  50% {
-    opacity: 0.5;
-    background-color: blue;
-  }
-  100% {
-    opacity: 1;
-    background-color: white;
-  }
-}*/
 
 .modal .btn-modal {
   text-align: right;
 }
 
 .btn-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
   width: 30px;
   height: 30px;
   border-radius: 50%;
