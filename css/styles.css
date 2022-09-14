@@ -488,8 +488,8 @@ img {
 .items {
   display: inline-block;
   width: 370px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0), 0px 4px 4px rgba(0, 0, 0, 0),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition: box-shadow;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -668,10 +668,10 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .adds {
-  margin-top: 12px;
   margin-left: 70px;
 }
 
